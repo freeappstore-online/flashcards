@@ -1,0 +1,13 @@
+{
+  "name": "flashcards",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "scripts": {
+    "dev": "pnpm --filter @flashcards/web dev",
+    "build": "pnpm --filter @flashcards/web build",
+    "preview": "pnpm --filter @flashcards/web preview",
+    "typecheck": "pnpm --filter @flashcards/web exec tsc -b"
+  }
+}
