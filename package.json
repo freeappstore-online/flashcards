@@ -2,10 +2,21 @@
   "name": "freeflashcardsapp",
   "private": true,
   "packageManager": "pnpm@10.30.3",
-  "engines": { "node": ">=22" },
-  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
   "scripts": {
     "dev": "pnpm --filter @freeflashcardsapp/web dev",
-    "build": "pnpm --filter @freeflashcardsapp/web build"
+    "build": "pnpm --filter @freeflashcardsapp/web build",
+    "test": "pnpm --filter @flashcards/web exec tsc -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/flashcards.git"
   }
 }
