@@ -79,7 +79,7 @@ const btnBase: React.CSSProperties = {
   border: "none",
   borderRadius: "var(--radius-btn)",
   cursor: "pointer",
-  fontFamily: "var(--font-body)",
+  fontFamily: "Manrope, system-ui, sans-serif",
   fontWeight: 600,
   fontSize: "0.875rem",
   transition: "opacity 0.15s",
@@ -122,7 +122,7 @@ const inputStyle: React.CSSProperties = {
   background: "var(--color-paper)",
   color: "var(--color-ink)",
   fontSize: "0.9375rem",
-  fontFamily: "var(--font-body)",
+  fontFamily: "Manrope, system-ui, sans-serif",
   outline: "none",
 };
 
@@ -272,7 +272,7 @@ function DeckListView({
 
   return (
     <div>
-      <h1 className="text-2xl font-bold mb-6" style={{ fontFamily: "var(--font-display)" }}>
+      <h1 className="text-2xl font-bold mb-6" style={{ fontFamily: "Fraunces, Georgia, serif" }}>
         Your Decks
       </h1>
 
@@ -390,7 +390,7 @@ function DeckDetailView({
           </form>
         ) : (
           <>
-            <h1 className="text-2xl font-bold" style={{ fontFamily: "var(--font-display)" }}>
+            <h1 className="text-2xl font-bold" style={{ fontFamily: "Fraunces, Georgia, serif" }}>
               {deck.name}
             </h1>
             <button
@@ -533,7 +533,7 @@ function EditCardView({
         &larr; {deck.name}
       </button>
 
-      <h1 className="text-2xl font-bold mb-6" style={{ fontFamily: "var(--font-display)" }}>
+      <h1 className="text-2xl font-bold mb-6" style={{ fontFamily: "Fraunces, Georgia, serif" }}>
         {isNew ? "Add Card" : "Edit Card"}
       </h1>
 
@@ -625,7 +625,7 @@ function StudyView({
       <div className="flex flex-col items-center justify-center" style={{ minHeight: "50vh" }}>
         <div
           className="text-4xl font-bold mb-4"
-          style={{ fontFamily: "var(--font-display)", color: "#22c55e" }}
+          style={{ fontFamily: "Fraunces, Georgia, serif", color: "#22c55e" }}
         >
           All done!
         </div>

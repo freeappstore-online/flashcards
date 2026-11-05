@@ -13,7 +13,8 @@
   "scripts": {
     "dev": "pnpm --filter @freeflashcardsapp/web dev",
     "build": "pnpm --filter @freeflashcardsapp/web build",
-    "test": "pnpm --filter @flashcards/web exec tsc -b"
+    "typecheck": "pnpm --filter @freeflashcardsapp/web exec tsc -b",
+    "test": "pnpm --filter @freeflashcardsapp/web exec tsc -b"
   },
   "repository": {
     "type": "git",
